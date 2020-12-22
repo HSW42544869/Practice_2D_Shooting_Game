@@ -3,7 +3,13 @@
 public class White : MonoBehaviour
 {
     #region 練習區域 - 在此區域內練習
-    
+    private void Fire()
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            Instantiate(bullet);
+        }
+    }
     #endregion
 
     #region KID 區域 - 不要偷看 @3@
